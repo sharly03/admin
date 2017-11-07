@@ -46,7 +46,7 @@ import { NotFound } from './pages/common/error';
 const validate = (next, replace, callback) => {
   const isLoggedIn = !!window.localStorage.getItem(AUTH_TOKEN_KEY);
   if (!isLoggedIn && next.location.pathname !== '/playground') {
-    replace('/login');
+    replace('/playground');
   }
   callback();
 };

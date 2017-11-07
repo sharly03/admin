@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Form, Input, Button, Row, message } from 'antd';
-import { AUTH_TOKEN_KEY } from '../../utils/constants';
+import { TEST_TOKEN_KEY } from '../../utils/constants';
 
 import Footer from '../../components/layout/footer';
 import BaseDao from '../../dao/base';
@@ -65,7 +65,7 @@ class Login extends React.Component {
 
         if (result && result.code === 0) {
           // 登录成功
-          window.localStorage.setItem(AUTH_TOKEN_KEY, result.data.token);
+          window.localStorage.setItem(TEST_TOKEN_KEY, result.data.token);
           BaseDao.updateCurrentUser(result.data);
           this.context.router.replace('/');
         } else {
