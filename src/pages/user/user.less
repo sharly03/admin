@@ -1,0 +1,23 @@
+.clear-btn {
+  position: relative;
+  margin-right: 16px;
+  &::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 2px; right: -8px;
+    width: 1px; height: 90%;
+    background: #ccc;
+  }
+}
+
+.user-page {
+  :global {
+    // 表格金额右对齐
+    .align-right {
+      text-align: right;
+      padding-right: 64px;
+      width: 164px;
+    }
+  }
+}

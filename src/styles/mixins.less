@@ -1,0 +1,52 @@
+// 清除浮动
+.clearfix() {
+  zoom: 1;
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    height: 0;
+  }
+}
+
+// 圆形
+.circle(@size){
+  width:@size;
+  height:@size;
+  border-radius: @size;
+}
+
+// 水平垂直居中
+.pbcenter() {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+// 可配置的水平垂直居中
+.center() {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+// 文字过长沈略...
+.text-overflow-hidden {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 文字垂直居中
+.verticalMiddle(@height){
+  height:@height;
+  line-height:@height;
+}
+

@@ -1,0 +1,106 @@
+@base-font-color: #2f3339;
+@secondary-font-color: #8F97A1;
+@tips-font-color: #AFB7C1;
+
+@red-font-color: #fa4556;
+@blue-font-color: #4c98f1;
+
+@font-weight: 500;
+
+@small-font-size: 12px;
+@base-font-size: 14px;
+@big-font-size: 16px;
+@huge-font-size: 20px;
+
+.text(@font-size) {
+  font-weight: 400;
+  font-size: @font-size;
+}
+
+.header(@font-size) {
+  .text(@font-size);
+  font-weight: 500;
+}
+
+.secondary-text() {
+  color: @secondary-font-color;
+}
+
+.tips-text() {
+  color: @tips-font-color;
+}
+
+.h1() {
+  .header(@huge-font-size);
+}
+
+.h2() {
+  .header(@big-font-size);
+}
+
+.h3() {
+  .header(@base-font-size);
+}
+
+.h4() {
+  .header(@small-font-size);
+}
+
+.text1() {
+  .text(@huge-font-size);
+}
+
+.text2() {
+  .text(@big-font-size);
+}
+
+.text3() {
+  .text(@base-font-size);
+}
+
+.text4() {
+  .text(@small-font-size);
+}
+
+.tips-text1() {
+  .text1;
+  .tips-text;
+}
+
+.tips-text2() {
+  .text2;
+  .tips-text;
+}
+
+.tips-text3() {
+  .text3;
+  .tips-text;
+}
+
+.tips-text4() {
+  .text4;
+  .tips-text;
+}
+
+.secondary-text1() {
+  .text1;
+  .secondary-text;
+
+}
+
+.secondary-text2() {
+  .text2;
+  .secondary-text;
+
+}
+
+.secondary-text3() {
+  .text3;
+  .secondary-text;
+
+}
+
+.secondary-text4() {
+  .text4;
+  .secondary-text;
+}

@@ -1,0 +1,54 @@
+@import '../../styles/var';
+.wrapper {
+  position: relative;
+  height: 100vh;
+
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: transparent;
+}
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -220px 0 0 -160px;
+  width: 320px;
+  height: 300px;
+  padding: 36px;
+  box-shadow: 0 0 100px rgba(0,0,0,.08);
+
+  button {
+    width: 100%;
+  }
+}
+
+.logo {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  margin-bottom: 24px;
+
+  img {
+    width: 40px;
+    margin-right: 8px;
+  }
+
+  span {
+    vertical-align: text-bottom;
+    font-size: @font-size-base;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+}
+
+//:global {
+//  .ant-input {
+//    background: red;
+//  }
+//}
