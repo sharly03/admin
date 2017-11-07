@@ -26,7 +26,7 @@ var options = {
   //   'dev.localhost:3000' : 'http://localhost:8000'
   // }
 };
-var port = 5500; // 服务端口号
+var port = 10086; // 服务端口号
 
 // app.use('/action/*', proxy('/action', {target: 'https://sandbox.api.ones.ai/v1/'}));
 // app.use('/api', proxy(options));
